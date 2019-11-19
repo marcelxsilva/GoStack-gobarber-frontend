@@ -3,7 +3,14 @@ import { Router } from 'react-router-dom'
 import Routes from './routes';
 import history from './services/history';
 import './config/ReactotronConfig';
+import GlobalStyles from './styles/global';
+
 function App() {
-  return <Router history={history}><Routes /></Router>
+  return (
+    <Router history={history}>
+      <Routes />
+      <GlobalStyles />
+    </Router>
+  )
 }
 export default App;
