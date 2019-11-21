@@ -49,3 +49,4 @@ export default function (state = INITIAL_STATE, action) {
 ```
 
 È claro que eu poderia simplesmente retornar um novo estado com todas as informações que foram recebidas pelo payload, mas em alguns casos isolados podemos precisar realizar algumas verificações antes de setar esse estado e o immer nos ajuda com isso.
+ 
