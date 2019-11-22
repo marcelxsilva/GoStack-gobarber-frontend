@@ -5,10 +5,10 @@ GoBarber é uma aplicação para o agendamento de serviços em uma barbearia des
 
 > ## Framework utilizados
 
-#### unform
+### unform
 È  uma framework da rocketseat utilizada para controlar formularios de uma maneira simplificada, [Saiba mais](https://github.com/Rocketseat/unform)
 
-#### yup 
+### yup 
 Utilizei o yup para realizar a validação de formularios na aplicação, com ele é facil exibir algumas informações caso os valores inseridos em um formulario não seja satisfatório, para validar as entradas na pagina de login o yup foi definido da seguinte forma:
 
 ```javascript
@@ -27,7 +27,7 @@ E este objeto schema é inserido como props do component Form do unform:
   <Form schema={schema} >
 ```
 
-#### immer
+### immer
 Ele nos ajuda a manipular nosso state facilmente, como mostrado no código abaixo:
 ```javascript
 import produce from 'immer';
@@ -50,3 +50,6 @@ export default function (state = INITIAL_STATE, action) {
 
 È claro que eu poderia simplesmente retornar um novo estado com todas as informações que foram recebidas pelo payload, mas em alguns casos isolados podemos precisar realizar algumas verificações antes de setar esse estado e o immer nos ajuda com isso.
  
+
+### redux-persist
+Utilizado para persistir valores do estado do redux em localstorage de forma simplificada.
