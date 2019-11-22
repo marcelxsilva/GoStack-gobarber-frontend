@@ -5,7 +5,6 @@ import history from '~/services/history';
 import { signInSuccess } from './actions';
 
 export function* signIn({ payload }) {
-  console.tron.log(payload)
   const { email, password } = payload;
 
   const response = yield call(api.post, 'sessions', {
@@ -14,7 +13,6 @@ export function* signIn({ payload }) {
   });
 
   const { token, user } = response.data;
-
   if (!user.provider) {
     console.tron.error('user not provider')
     return;
