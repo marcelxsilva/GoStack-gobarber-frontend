@@ -4,6 +4,7 @@ import api from '~/services/api';
 import history from '~/services/history';
 import { signInSuccess, signFailure } from './actions';
 
+import { toast } from 'react-toastify'
 export function* signIn({ payload }) {
 
   try {
@@ -16,7 +17,7 @@ export function* signIn({ payload }) {
 
     const { token, user } = response.data;
     if (!user.provider) {
-      console.tron.error('user not provider')
+      toast.error('user not provider')
       return;
     }
 
@@ -24,6 +25,7 @@ export function* signIn({ payload }) {
 
     history.push('/dashboard')
   } catch (error) {
+    toast.error('Falha na autenticação, verifique seus dados')
     yield put(signFailure())
   }
 }
