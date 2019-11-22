@@ -19,6 +19,6 @@ export const signInSuccess = ({ token, user }) => {
 
 export const signFailure = () => {
   return {
-    type: '@auth/SIGN_FAILURE',
+    type: '@auth/SIGN_IN_FAILURE',
   }
 }
