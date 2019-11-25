@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom';
 import { Container, Content, Profile } from './styles';
 import logo from '~/assets/logo2.svg';
 
+import Notifications from '../Notifications';
+
 export default function Header() {
   return (
     <Container>
       <Content>
         <nav>
-        <img src={logo} alt='user' />
+          <img src={logo} alt='user' />
 
           <Link to='/dashboard'>DASHBOARD</Link>
-          </nav>
+        </nav>
 
         <aside>
+          <Notifications />
           <Profile>
             <div>
               <strong>Name User</strong>
