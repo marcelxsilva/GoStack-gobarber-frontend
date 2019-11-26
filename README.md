@@ -53,3 +53,9 @@ export default function (state = INITIAL_STATE, action) {
 
 ### redux-persist
 Utilizado para persistir valores do estado do redux em localstorage de forma simplificada.
+
+### react-perfect-scrollbar
+Utilizado para dar scrol no componente de notificação.
+
+### date-fns
+aqui utilizei para realizar o calculo do tempo que se passou após a emissao de uma notificação, p ex: esta notificação foi gerada há 2 minutos atras
