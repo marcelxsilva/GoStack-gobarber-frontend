@@ -1,4 +1,4 @@
-> ## Front-Endo GoBarber
+> ## Front-End GoBarber
 
 GoBarber é uma aplicação para o agendamento de serviços em uma barbearia desenvolvida no GoStack da Rocketseat
 
